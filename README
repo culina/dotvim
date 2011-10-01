@@ -1,0 +1,9 @@
+set up the symlink for vimrc
+ln -s ~/.vim/vimrc ~/.vimrc
+
+vundle is added as a submodule
+To install on a new machine 
+git clone --recursive
+go into vim
+:BundleInstall
+
