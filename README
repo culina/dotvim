@@ -7,3 +7,6 @@ git clone --recursive
 go into vim
 :BundleInstall
 
+Remember to set the symlink from .vim/colors
+ln -s ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/solarized.vim
+

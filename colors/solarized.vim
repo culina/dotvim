@@ -1,1 +1,0 @@
-/uio/arkimedes/s21/jonasac/.vim/bundle/vim-colors-solarized/colors/solarized.vim
