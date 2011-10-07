@@ -49,7 +49,7 @@ let g:solarized_termcolors=16
 syntax enable
 
 if has('gui_running')
-    set background=light
+    set background=dark
 else
     set background=dark
 endif
