@@ -26,6 +26,10 @@ set guioptions-=m " remove the menubar from gvim
 set guioptions-=T " remove the toolbar from gvim
 set guioptions-=r " remove right-hand scrollbar
 set guifont=Monaco\ 9
+set splitright "vertical splits opens on the right hand side
+set autochdir " autosets the dir to the dir you are working in
+set background=dark
+colorscheme wombat
 
 if v:version >= 703
     set colorcolumn=80
@@ -42,19 +46,6 @@ set statusline+=%f
 set statusline+=%#Comment#\ %r%m " [RO][modified]
 set statusline+=%#Comment#\ (\%L\ lines)[%l:%c]\ " Lines in file, lineno, colno
 set statusline+=%* 
-
-" Solarized options
-set t_Co=16
-let g:solarized_termcolors=16
-syntax enable
-
-if has('gui_running')
-    set background=dark
-else
-    set background=dark
-endif
-
-colorscheme solarized
 
 " Taglist settings
 let Tlist_Ctags_Cmd = '/usr/bin/ctags'
@@ -73,5 +64,4 @@ Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/taglist.vim'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
