@@ -5,7 +5,6 @@ syntax on
 
 " general options
 set laststatus=2 " turn on status line
-set nowrap  " no wrapping lines
 set nobackup " no backup files (backupfile~)
 set clipboard+=unnamed " yank and copy to X clipboard
 set backspace=2 " full backspacing capabilities
@@ -22,17 +21,18 @@ set smartindent " be smart about it
 set tabstop=4 " tabs are four spaces wrong
 set shiftwidth=4 " n cols for autoindenting
 set expandtab " insert spaces  instead of tabs
-set guioptions-=m " remove the menubar from gvim
+"set guioptions-=m " remove the menubar from gvim
 set guioptions-=T " remove the toolbar from gvim
 set guioptions-=r " remove right-hand scrollbar
 set guifont=Monaco\ 9
 set splitright "vertical splits opens on the right hand side
-set autochdir " autosets the dir to the dir you are working in
+set autochdir "autosets the dir to the dir you are working in
+set tw=80
 set background=dark
 colorscheme wombat
 
 if v:version >= 703
-    set colorcolumn=80
+    set colorcolumn=79
 endif
 
 if has("gui_running")
@@ -65,3 +65,5 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'ervandew/supertab'
+Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/TabBar'
