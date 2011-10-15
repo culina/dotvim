@@ -27,7 +27,6 @@ set guioptions-=r " remove right-hand scrollbar
 set guifont=Monaco\ 9
 set splitright "vertical splits opens on the right hand side
 set autochdir "autosets the dir to the dir you are working in
-set tw=80
 set background=dark
 colorscheme wombat
 
