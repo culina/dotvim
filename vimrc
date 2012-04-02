@@ -6,7 +6,7 @@ set nocompatible " be iMproved
 filetype off " required!
 filetype plugin indent on
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/dotvim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle, required
@@ -117,6 +117,7 @@ command W w
 command Q q
 map <F1> <Esc>
 imap <F1> <Esc>
+imap jj <Esc>
 
 " Removes doc lookup binding because it's easy to fat finger
 nmap K k
