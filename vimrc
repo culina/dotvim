@@ -117,6 +117,11 @@ command W w
 command Q q
 map <F1> <Esc>
 imap <F1> <Esc>
+set pastetoggle=<F2>
+map <F3> :tabprevious<CR>
+imap <F3> <Esc>:tabprevious<CR>
+map <F4> :tabnext<CR>
+imap <F4> <Esc>:tabnext<CR>
 imap jj <Esc>
 
 " Removes doc lookup binding because it's easy to fat finger
